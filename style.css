@@ -105,17 +105,28 @@ main{
     border-radius: 10px;
 }
 
+.cart-button:hover{
+    background: var(--dark-blue);
+}
+
 @media (min-width: 376px) {
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         border-radius: 15px;
+        max-width: 500px;
     }
 
     .perfume-img{
         background-image: url("images/image-product-desktop.jpg");
+        background-size: cover;
+        height: 100%;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         border-top-right-radius: 0;
+    }
+
+    .product{
+        font-size: 1.8rem;
     }
 }
